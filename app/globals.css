@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "FormaMicro";
+    src: url("../public/fonts/FormaDJRMicro-Regular-Testing.ttf");
+}
+
+@font-face {
+    font-family: "FormaDisplay";
+    src: url("../public/fonts/FormaDJRDisplay-Regular-Testing.ttf");
+}
