@@ -35,7 +35,7 @@ export default function FormComponet({
       }}
       validationSchema={registerSchema}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
-        await addDoc(collection(db, 'HP-ACF-13-08-2026'), {
+        await addDoc(collection(db, 'Tech-Day-HP'), {
           fecha: Date.now(),
           ...values,
         })

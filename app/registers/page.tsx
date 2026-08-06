@@ -98,7 +98,7 @@ export default function Registers() {
                 }
 
                 <div className="flex justify-center my-5 gap-5">
-                    <button className="h-10 px-5 bg-yellow-200 rounded-xl text-black text-xl" onClick={() => getRegisters('HP-ACF-13-08-2026')}>
+                    <button className="h-10 px-5 bg-yellow-200 rounded-xl text-black text-xl" onClick={() => getRegisters('Tech-Day-HP')}>
                         Registros
                     </button>
                     {registers.length > 0 &&
