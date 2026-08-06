@@ -9,7 +9,7 @@ export async function POST(req: Request, res: Response) {
 
 
   // Suponiendo que quieres adjuntar imagen.jpg que está en /public/imagenes
-  const imagePath = path.join(process.cwd(), 'public', 'bgmail.png');
+  const imagePath = path.join(process.cwd(), 'public', 'BG.png');
 
 
   const oauth2Client = new OAuth2(
@@ -43,12 +43,12 @@ export async function POST(req: Request, res: Response) {
     text, // Asegúrate de validar y limpiar correctamente
     attachments: [
       {
-        filename: 'bgmail.png',
+        filename: 'BG.png',
         path: imagePath,
-        cid: 'bgmail' // Puede ser cualquier cadena única
+        cid: 'BG' // Puede ser cualquier cadena única
       }
     ],
-    html: '<img src="cid:bgmail" style="width: 100%; height: 50%;">', // Asegúrate de validar y limpiar correctamente
+    html: '<img src="cid:BG" style="width: 100%; height: 50%;">', // Asegúrate de validar y limpiar correctamente
   };
 
   try {
